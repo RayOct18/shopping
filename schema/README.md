@@ -13,11 +13,12 @@ Step 2: Setup the privilege in the database.
 Step 3: Create the table and foreign key in the database.
 
 	psql -U app_admin -d shopping_db -f create_table.sql
+	psql -U app_admin -d shopping_db -f create_fk.sql
 
 
 Step 4: Grant table privilege to the users.
 
-	psql -U app_admin -d shopping_db -f create_fk.sql
+	psql -U app_admin -d shopping_db -f grant_table_privilege.sql
 
 
 Optional: Add testing data.
