@@ -9,7 +9,7 @@ services:
     networks:
       - shopping-backend-dev
     volumes:
-      - ${PWD}/schema:/docker-entrypoint-initdb.d
+      - ${PWD}/schema:/docker-entrypoint-initdb.d:ro
 
 networks:
   shopping-backend-dev:
