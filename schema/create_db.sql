@@ -18,6 +18,6 @@ CREATE ROLE app_user LOGIN PASSWORD 'user_password' NOSUPERUSER INHERIT NOCREATE
 CREATE ROLE app_readonly LOGIN PASSWORD 'readonly_password' NOSUPERUSER INHERIT NOCREATEDB NOCREATEROLE NOREPLICATION;
 
 
-CREATE DATABASE shopping_db with ENCODING = 'UTF8' LC_COLLATE = 'Chinese (Traditional)_Taiwan.950' LC_CTYPE = 'Chinese (Traditional)_Taiwan.950' CONNECTION LIMIT = -1 template=template0;
+CREATE DATABASE shopping_db with ENCODING = 'UTF8' LC_COLLATE = 'en_US.UTF-8' LC_CTYPE = 'en_US.UTF-8' CONNECTION LIMIT = -1 template=template0;
 
 ALTER DATABASE shopping_db OWNER TO app_admin;
