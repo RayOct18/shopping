@@ -1,0 +1,19 @@
+version: "3.9"
+
+services:
+  db:
+    image: postgres:13.5
+    container_name: shopping-db-dev
+    environment:
+      POSTGRES_PASSWORD: postgres_dev
+    volumes:
+      - "./docker/dev/init_db.sh:/init_db.sh"
+    command:
+      - init_db.sh
+    networks:
+      - shopping-backend-dev
+
+networks:
+  shopping-backend-dev:
+    name: shopping-backend-dev
+    driver: bridge
