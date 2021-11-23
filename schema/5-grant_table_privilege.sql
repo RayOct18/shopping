@@ -1,3 +1,5 @@
+\connect shopping_db app_admin
+
 GRANT SELECT, INSERT, UPDATE, DELETE, REFERENCES ON TABLE users to app_user;
 GRANT SELECT, INSERT, UPDATE, DELETE, REFERENCES ON TABLE address to app_user;
 GRANT SELECT, INSERT, UPDATE, DELETE, REFERENCES ON TABLE shopping_cart to app_user;

@@ -1,3 +1,5 @@
+\connect shopping_db app_admin
+
 SET client_encoding = 'UTF8';
 
 INSERT INTO users (account, password, name, tel, email, birthday)

@@ -1,3 +1,5 @@
+\connect shopping_db app_admin
+
 ALTER TABLE address ADD FOREIGN KEY (admin_id) REFERENCES users (id) MATCH FULL;
 ALTER TABLE shopping_cart ADD FOREIGN KEY (user_id) REFERENCES users (id) MATCH FULL;
 ALTER TABLE shopping_cart ADD FOREIGN KEY (product_id) REFERENCES product (id) MATCH FULL;

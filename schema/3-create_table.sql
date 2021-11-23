@@ -1,4 +1,7 @@
+\connect shopping_db app_admin
+
 --the script to remove all tables in the database
+/*
 DROP TABLE IF EXISTS users CASCADE;
 DROP TYPE IF EXISTS delivery_type CASCADE;
 DROP TABLE IF EXISTS address CASCADE;
@@ -8,6 +11,7 @@ DROP TABLE IF EXISTS orders CASCADE;
 DROP TYPE IF EXISTS order_status CASCADE;
 DROP TABLE IF EXISTS order_detail CASCADE;
 DROP TABLE IF EXISTS message CASCADE;
+*/
 
 CREATE TABLE users (
   id SERIAL PRIMARY KEY,
